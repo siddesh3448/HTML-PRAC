@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .card {
+            width: 400px;
+            min-height: 600px;
+            border: 2px solid;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px gray;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .img-container {
+            position: relative;
+        }
+
+        .like-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .details {
+            margin: 20px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            color: red;
+        }
+
+        h4 {
+            background-color: rgb(244, 95, 95);
+            color: white;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 5px 15px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CARD 1 -->
+    <article class="card">
+
+        <section class="img-container">
+            <div class="like-box">❤️</div>
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+                alt="product image" style="width: 100%;">
+        </section>
+
+        <section class="details">
+            <h3><i>Nike Shoes</i></h3>
+            <h4>$50.00 USD</h4>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsum aliquid veniam nesciunt, ducimus quod sed temporibus.
+            </p>
+        </section>
+
+    </article>
+
+
+    <!-- CARD 2 -->
+    <article class="card">
+
+        <section class="img-container">
+            <div class="like-box">❤️</div>
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d"
+                alt="product image" style="width: 100%;">
+        </section>
+
+        <section class="details">
+            <h3><i>Nike Shoes</i></h3>
+            <h4>$50.00 USD</h4>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsum aliquid veniam nesciunt, ducimus quod sed temporibus.
+            </p>
+        </section>
+
+    </article>
+
+</body>
+
+</html>

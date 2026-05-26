@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrM8tjbTqytwyJBeGx8QIGAPkdLxN3_EDiFg&s">
+    <title>Sports Physical form</title>
+
+    <style>
+        input {
+            border: none;
+            border-bottom: 2px dotted black;
+            outline: none;
+        }
+
+        fieldset {
+            border: none;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+        <h1 style="text-align: center;">
+            <span style="background-color: rgb(202, 172, 178); padding: 5px;">
+                <strong>Sports Physical Form</strong>
+            </span>
+        </h1>
+    </section>
+
+    <section>
+
+
+        <form action="actionPage.html" method="get">
+
+            <!-- Athlete Info -->
+            <section>
+                <fieldset>
+                    <legend><strong>Athlete Information</strong></legend>
+                    <ul>
+                        <li>
+                            <label for="fname"><strong>Name:- </strong></label>
+                            <input type="text" id="fname" name="fname" placeholder="Enter Your Name">
+                        </li>
+
+                        <li>
+                            <label for="school_name"><strong>School/Team:- </strong></label>
+                            <input type="text" id="school_name" name="school_name" placeholder="School Name">
+                        </li>
+
+                        <li>
+                            <label for="sports"><strong>Sports:- </strong></label>
+                            <input type="text" id="sports" name="sports" placeholder="Sports Name">
+                        </li>
+
+                        <li>
+                            <label for="parent_guardian"><strong>Parent/Guardian Name:- </strong></label>
+                            <input type="text" id="parent_guardian" name="parent_guardian" placeholder="Parent Info">
+                        </li>
+
+                        <li>
+                            <label for="contact"><strong>Contact:- </strong></label>
+                            <input type="number" id="contact" name="contact" placeholder="Contact Number">
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- Medical Info -->
+            <section>
+                <fieldset>
+                    <legend><strong>Medical History Of Athlete</strong></legend>
+
+                    <ul>
+
+                        <li>
+                            <p>History of concussions: <input type="radio" id="concussion-yes" name="concussion"
+                                    value="YES">
+                                <label for="concussion-yes"><strong>Yes</strong></label>
+
+                                <input type="radio" id="concussion-no" name="concussion" value="NO">
+                                <label for="concussion-no"><strong>No</strong></label>
+                            </p>
+
+                        </li>
+
+                        <li>
+                            <label for="previous_surgeries">
+                                Previous surgeries:-
+                            </label>
+                            <input type="text" id="previous_surgeries" name="previous_surgeries"
+                                placeholder="Medical History">
+                        </li>
+
+                        <li>
+                            <p>Any bone fractures? <input type="radio" id="fracture-yes" name="fracture" value="YES">
+                                <label for="fracture-yes"><strong>Yes</strong></label>
+
+                                <input type="radio" id="fracture-no" name="fracture" value="NO">
+                                <label for="fracture-no"><strong>No</strong></label>
+                            </p>
+
+                        </li>
+
+                        <li>
+                            <p>Asthma or breathing problems: <input type="radio" id="asthma-yes" name="asthma"
+                                    value="YES">
+                                <label for="asthma-yes"><strong>Yes</strong></label>
+
+                                <input type="radio" id="asthma-no" name="asthma" value="NO">
+                                <label for="asthma-no"><strong>No</strong></label>
+                        </li>
+                        </p>
+
+
+                    </ul>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- DATE & TIME BUTTON -->
+            <section>
+                <fieldset>
+                    <legend>
+                        <Strong>Date & Time</Strong>
+                    </legend>
+                    <ul>
+                        <li>
+                            <label for="DOB">DOB:- </label>
+                            <input type="date" name="DOB" id="DOB" value="DOB" required>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="TIME">TIME:- </label><input type="time" name="TIME" id="TIME" value="TIME"
+                                required>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- FEEDBACK AREA -->
+            <section>
+                <fieldset>
+                    <legend><strong>Feedback</strong></legend>
+                    <ul>
+                        <li>
+                            <label for="feedback">Feedback Form</label> <br>
+                            <textarea name="feedback" id="feedback" placeholder="Enter your Feedback!" rows="7"
+                                cols="50" required></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- DOCUMENTATION -->
+            <section>
+                <fieldset>
+                    <legend><strong>Documents</strong></legend>
+                    <ul>
+                        <li>
+                            <label for="file">Documents in PDF format:- </label>
+                            <input type="file" name="file" id="file" value="file" accept=".PDF" required>
+                        </li>
+                        <li>
+                            <label for="image">Documents in Image format:- </label>
+                            <input type="file" name="image" id="image" value="image" accept=".jpeg" required>
+                        </li>
+                    </ul>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <!-- TERMS & CONDITION -->
+            <section>
+                <fieldset>
+                    <legend>TERM's & CONDITION's*</legend>
+                    <label for="checkbox"><strong>Accept *</strong>
+                        <input type="checkbox" name="checkbox" id="checkbox" value="T&C-accept" required>
+                    </label>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <section>
+                <fieldset>
+                    <legend><strong>Select</strong></legend>
+                    <label for="state">Select your state:</label>
+                    <select name="state" id="state" required>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="odisa">Odisa</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="Hydrabad">Hyadrabad</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="sikkim">Sikkim</option>
+                    </select>
+                </fieldset>
+
+            </section>
+
+            <br>
+
+
+            <!-- FORM SUBMITION -->
+            <section>
+                <!-- Buttons INSIDE form -->
+                <label><strong>Click here to submit:</strong></label><br><br>
+                <button type="submit"><strong>Submit Form</strong></button>
+                <button type="reset"><strong>Reset Form</strong></button>
+            </section>
+
+        </form>
+    </section>
+    <br>
+
+
+</body>
+
+</html>
