@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neumorphism Product Card</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <style>
+        .social-media-icons {
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        div i {
+            font-size: 30px;
+            color: #1877f2;
+
+        }
+
+        body {
+            background: #e8dfd1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            width: 400px;
+            min-height: 650px;
+            border-radius: 30px;
+            background: #e8dfd1;
+
+            box-shadow:
+                12px 12px 25px #c7beb1,
+                -12px -12px 25px #fffaf0;
+
+            overflow: hidden;
+        }
+
+        .img-container {
+            position: relative;
+        }
+
+        .img-container img {
+            width: 100%;
+            border-radius: 30px 30px 0 0;
+        }
+
+        .like-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+            font-size: 20px;
+        }
+
+        .details {
+            padding: 25px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-family:
+                "Lucida Grande",
+                "Lucida Sans Unicode",
+                Geneva,
+                Verdana,
+                sans-serif;
+
+            color: rgb(225, 151, 59);
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            display: inline-block;
+
+            padding: 10px 20px;
+            border-radius: 30px;
+
+            background: hsl(37, 33%, 86%);
+            color: black;
+
+            box-shadow:
+                5px 5px 10px #c7beb1,
+                -5px -5px 10px #fffaf0;
+
+            font-size: 18px;
+        }
+
+        p {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-weight: 600;
+            line-height: 1.7;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <article id="container">
+
+
+        <section class="img-container">
+            <div class="like-box">❤️</div>
+
+            <img src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-man-avatar-image-for-profile-png-image_13001877.png"
+                alt="product image" />
+        </section>
+
+        <section class="details">
+            <h2 style="text-align: center; color: black;">User Name</h2>
+
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color: rgb(255, 0, 212);"></i>
+                </a>
+
+                <a href="http://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #0a4ca1;"></i>
+                </a>
+
+                <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github" style="color: black;"></i></a>
+            </div>
+
+            <p>
+                <i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ullam sit facilis, unde ea impedit rem esse corrupti
+                    minima quaerat voluptate sunt.
+                </i>
+            </p>
+        </section>
+
+    </article>
+</body>
+
+</html>
