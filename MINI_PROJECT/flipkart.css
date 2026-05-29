@@ -111,10 +111,11 @@ main {
 
     height: 90px;
 
-    border: 2px solid #a5ff00;
+    border: 5px solid #a5ff00;
 
     padding-top: 10px;
     padding-left: 8px;
+    background-color: #d9d3d3;
 }
 
 /* ADS */
